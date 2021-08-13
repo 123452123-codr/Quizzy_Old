@@ -4,7 +4,7 @@ var signUp = document.getElementById('signUp');
 var alreadyauser = document.getElementById('alreadyauser');
 
 signUp.addEventListener("click", function(){
-    firebase.auth().createUserWithEmailAndPassword(email, password)
+    firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
     .then((userCredential) => {
         var user = userCredential.user;
         const text = {RealEmail : email.value, RealPassword : password.value};
