@@ -7,9 +7,6 @@ signUp.addEventListener("click", function(){
     firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
     .then((userCredential) => {
         var user = userCredential.user;
-        const text = {RealEmail : email.value, RealPassword : password.value};
-        const save = JSON.stringify(text);
-        localStorage.setItem("Info", save);
         window.open("signIn.html","_self");
     })
     .catch((error) => {
