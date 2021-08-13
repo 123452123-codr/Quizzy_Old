@@ -1,17 +1,4 @@
 var database = firebase.database();
-var firebaseConfig = {
-    apiKey: "AIzaSyDodiBUiarLEaXPnz47v1xGWDb4NchBpCc",
-    authDomain: "quizzy-cbc2e.firebaseapp.com",
-    databaseURL: "https://quizzy-cbc2e-default-rtdb.firebaseio.com",
-    projectId: "quizzy-cbc2e",
-    storageBucket: "quizzy-cbc2e.appspot.com",
-    messagingSenderId: "410760209039",
-    appId: "1:410760209039:web:df311a618510cc892a06fa",
-    measurementId: "G-GPFKDWBS4Z"
-  };
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-
 
 window.onload = function(){
     database.ref('Answers').on("value", function(snapshot){
