@@ -16,3 +16,7 @@ signUp.addEventListener("click", function(){
         alert(errorMessage);
     });
 });
+
+alreadyauser.addEventListener("click", function(){
+    window.open("signIn.html","_self");
+});
