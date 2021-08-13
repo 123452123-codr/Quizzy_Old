@@ -18,3 +18,7 @@ signIn.addEventListener("click", function(){
         console.log(errorCode);
     });
 });
+
+signInGoogle.addEventListener("click", function(){
+    var provider = new firebase.auth.GoogleAuthProvider();
+})
